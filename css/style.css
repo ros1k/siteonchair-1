@@ -19,7 +19,8 @@ body {
     color:#222;
 }
 
-/* page header */
+
+/* ---- page header ---- */
 .page-header {
     height:40px;
     background: #000;
@@ -34,7 +35,8 @@ body {
     display: inline-block;
 }
 
-/* page nav */
+
+/* ---- page nav ---- */
 .page-nav {
 
 }
@@ -66,11 +68,10 @@ body {
     transform: translate(-50%, 0);
     background: #000;
 
-    opacity:0; /* plynne pokazywanie podmenu */
+    opacity:0; /* plynne pokazywanie podmenu - 3 linijki */
     visibility:hidden;
     transition: 0.5s opacity;
 }
-
 .page-nav .page-nav-submenu:before {
     content:'';
     width:0;
@@ -83,16 +84,15 @@ body {
     transform: translate(-50%, 0);
 }
 .page-nav .page-nav-submenu:after {
-    content:'';
+    content:''; /* to jest czarny dziubek z bordera */
     position: absolute;
     left:0;
     top:-17px;
     width:100%;
     height:17px;
 }
-
 .page-nav li:hover .page-nav-submenu {
-    opacity:1;
+    opacity:1; /* pokazanie menu po najechaniu */
     visibility:visible;
 }
 .page-nav .page-nav-submenu li {
@@ -105,4 +105,40 @@ body {
     text-transform: none;
     font-weight: normal;
     padding:0 20px;
+}
+
+
+/* ---- page slider ---- */
+.page-slider-cnt {
+    background: linear-gradient(to bottom, #fafafa 0%, #d1ced7 100%);
+    height:500px;
+}
+.page-slider-cnt .container {
+    height:inherit;
+}
+.main-slider {
+    display: flex;
+    height:100%;
+}
+.main-slider-prev,
+.main-slider-next {
+    width:50px;
+    color:#24BA9F;
+    font-size:60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-slider-cnt {
+    background: yellow;
+    flex-grow: 1;
+    position: relative;
+}
+.main-slider-slide {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
 }
