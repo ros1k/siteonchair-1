@@ -1,18 +1,14 @@
-SitOnChair
-==========
+SiteOnChair
+===========
 
-Projekt zawiera kod warsztatów z cięcia strony **sitOnChair**
+Projek który robimy na wasztatach.
+Projekt składa się z grafiki i html.
 
-
-Struktura katalogow
--------------------
-1. css  
-   -- css
+Struktura html
+--------------
+1. css
+    - style.css
+    - reset.css
 2. js
 3. images
 4. index.html
-
-
-Autor
------
-Pan Marcin
