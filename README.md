@@ -1,6 +1,8 @@
 SiteOnChair
 ===========
 
+First project made on CodersLab bootcamp
+----------------------------------
 Projek który robimy na wasztatach.
 Projekt składa się z grafiki i html.
 
