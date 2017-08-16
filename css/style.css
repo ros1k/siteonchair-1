@@ -55,6 +55,13 @@
     top:-29px;
     left: 151px
 }
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.showing{
+    opacity: 1;
+}
 /* -------------------------------------------------------------------------------- */
 /* layout */
 /* -------------------------------------------------------------------------------- */
@@ -199,11 +206,13 @@ body {
     height:100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    transition: opacity 1s;
 }
 .main-slider-slide-cnt{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .main-slider-slide img{
@@ -221,7 +230,7 @@ body {
 .main-slider-slide-cnt p{
     font-size: 14px;
     line-height: 23px;
-    width:80%;
+    width:70%;
     text-align: center;
 }
 .main-slider-btn-ctn{
